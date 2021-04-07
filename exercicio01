@@ -1,0 +1,15 @@
+def lerMatriz(x,y):
+  matriz = []
+  for l in range (x):
+    linha = []
+    for c in range (y):
+      linha.append(int(input('Digite o valor de ['+ str(l) + ',' + str(c) + ']: ')))
+    matriz.append(linha)
+  return matriz
+def main():
+  a = int(input("Digite um valor: "))
+  b = int(input("Digite outro valor: "))
+  retorna = lerMatriz(a,b)
+  print(retorna)
+
+main()
